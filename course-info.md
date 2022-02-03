@@ -42,12 +42,7 @@ according to the schedule on the [Syllabus](syllabus.md).  There will be eight
 in-class exercises to apply what you learned during the lectures and to prepare
 you for the deliverables.
 
-You can choose to either attend classes in-person, synchronously online, or
-asynchronously online according to the Flex@Pitt model.  Synchronous attendance
-of classes (either in-person or online) is encouraged but not required.  If you
-don't attend the lecture, please view the in-class discussion through Panopto
-recordings available on Canvas.  The class schedule is available on the
-[Syllabus](syllabus.md)).  
+The class schedule is available on the [Syllabus](syllabus.md)).  
 
 ## Grading
 
@@ -244,3 +239,21 @@ integrity._
 _4. If you have a question on the deliverables that does require showing your
 work, please initiate a chat with your instructor on Teams or come to office
 hours._
+
+## Back to In-Person
+
+The university policy is to be back to full in-person.  That means we are back
+to pre-COVID rules concerning remote classes: it does not exist, as a general
+rule.  There are two exceptions:
+
+_1. If you have to quarantine due to contact with COVID.  Either you have a
+positive test result or you are waiting for test results._
+
+_2. If you have a family or medical emergency that would cause you to miss
+class.  Rather than miss class, if you are able to participate over Zoom, I
+encourage you to do so._
+
+For the above exceptions, I will create Zoom sessions on demand.  These Zoom
+sessions are only available to affected students and are protected by a
+password which is distributed individually.  Please notify me as soon as you
+are affected so I can make arrangements.
