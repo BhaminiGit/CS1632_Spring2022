@@ -77,8 +77,8 @@ public class RentACatBuggy implements RentACat {
 	}
 
 	/**
-	 * Given an id, return true if the cat exists in the list of cats or false if
-	 * no cat with that id number exists in the list. If list is null or contains 0
+	 * Given an id, return true if the cat exists in the list of cats or false if no
+	 * cat with that id number exists in the list. If list is null or contains 0
 	 * elements, should always return false.
 	 * 
 	 * @param id ID of cat to search for

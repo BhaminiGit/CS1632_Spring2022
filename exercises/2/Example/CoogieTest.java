@@ -6,18 +6,17 @@ import static org.junit.Assert.*;
 
 public class CoogieTest {
 
-    
-    // This test is meant to fail.
-    
-    @Test
-    public void testMeowAndBarkAreEqualWillFail() {
-	assertEquals("Meow", "Bark");
-    }
+	// This test is meant to fail.
 
-    @Test
-    public void testShouldPass() {
-	int z = 2;
-	assertTrue(z == 2);
-    }
-    
+	@Test
+	public void testMeowAndBarkAreEqualWillFail() {
+		assertEquals("Meow", "Bark");
+	}
+
+	@Test
+	public void testShouldPass() {
+		int z = 2;
+		assertTrue(z == 2);
+	}
+
 }
