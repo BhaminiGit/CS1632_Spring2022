@@ -469,12 +469,12 @@ Most useful is the sections about verification and stubbing.
 * Jacoco User Manual:  
 https://www.jacoco.org/userdoc/index.html
 
+* Jacoco Java Agent Manual:  
+https://www.jacoco.org/jacoco/trunk/doc/agent.html
+
 * Jacoco CLI (Command Line Interface) Manual:  
 https://www.jacoco.org/jacoco/trunk/doc/cli.html
 
 * Eclipse IDE
-If you want more information, here is a page put up by a U Chicago professor:  
-http://people.cs.uchicago.edu/~kaharris/10200/tutorials/eclipse/index.html  
-It uses a much earlier version of Eclipse, but other than the outdated UI, the operations are the same.  I looked at several resources and this one was the most concise and to the point.  A more comprehensive manual is at eclipse.org:  
-https://help.eclipse.org/2019-12/index.jsp  
+https://help.eclipse.org/
 Look at the "Java development user guide" chapter on the left.
