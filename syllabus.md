@@ -66,11 +66,11 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 1: Midterm 1 review / TopHat questions
 
-* Class 2: Study for Midterm 1 (NO CLASS)
+* Class 2: NO CLASS (Study for Midterm 1.  Extended office hours 1:00 - 5:00 PM on Zoom and in-person at SENSQ 5423)
   
-* Midterm 1 on GradeScope: Feb. 18 (Friday) 10:00 AM - Feb. 20 (Sunday) 11:59 PM
+* Midterm 1 on GradeScope: Feb. 18 (Friday) 9:00 AM - Feb. 20 (Sunday) 11:59 PM
   * Check out the **[study guide](/study_guides/midterm_1_study_guide.md)**!
-  * Will be posted as link named "Midterm 1" at Friday 10:00 AM.
+  * Will be posted as link named "Midterm 1" at Friday 9:00 AM.
   * You will choose a 3 hour span to complete exam within the above 3-day period.
   * Your 3 hours begin the moment you click on link and agree to the terms on the next screen.
   * Open book but individual work.
@@ -155,9 +155,13 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 14 (Week of 11 APR)
 
-* Class 1: Guest Lecture (TBD)
+* April 12 (Tuesday) 1:00 PM - 2:15 PM: [Duquesne Light](https://www.duquesnelight.com/) Guest Lecture on CI/CD and Security Testing
 
-* Class 2: Guest Lecture (TBD)
+* April 12 (Tuesday) 4:00 PM - 5:15 PM: [CGI](https://www.cgi.com/en) Guest Lecture on Data Analytics and QA
+
+* April 14 (Thursday) 1:00 PM - 2:15 PM: [Deloitte](https://www.deloitte.com/) Guest Lecture on In-depth Selenium Testing
+
+* April 14 (Thursday) 4:00 PM - 5:15 PM: [CGI](https://www.cgi.com/en) Guest Lecture on Machine Learning and QA
 
 ## WEEK 15 (Week of 18 APR)
 
