@@ -256,7 +256,7 @@ You can now run the RedditCatsTest JUnit class using the provided
 
 * If you are running Mac or Linux:
    ```
-   run.sh
+   bash run.sh
    ```
 
 * You can also run your Selenium tests on Eclipse using the "Run JUnit"
@@ -340,7 +340,7 @@ either because it will slow down testing.
 
    **You may have to insert the above sleep code in your web driver when you
 test FUN-SORT-BY-COMMENT, between the command to type "catnip" and the command
-to pressing <Enter>.**  There is a race condition here because when you type
+to pressing [Enter].**  There is a race condition here because when you type
 "catnip" in the search box, a drop down menu with a list of suggestions
 appears, during which the search box is not responsive to user key strokes.  If
 the <Enter> key stroke arrives when the search box is in this state, the key
