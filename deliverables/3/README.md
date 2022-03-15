@@ -45,8 +45,6 @@ listed in [requirements.md](requirements.md).  Name each test case using the
 IDENTIFIER for the test case.  This is important for the purposes of GradeScope
 autograding.  
 
-Specifically, write the following test scenarios:
-
 ## Task 2: Find three defects and write test cases for them
 
 This is another buggy product.  You should find at least three defects and

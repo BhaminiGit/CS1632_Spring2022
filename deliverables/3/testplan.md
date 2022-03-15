@@ -64,7 +64,7 @@ PRECONDITIONS: Cat ID 2 has been rented out using these steps.
 3. Press the "Rent" button.
 EXECUTION STEPS:
 1. Enter "2" into the input box for the returned cat ID.
-3. Press the "Return" button.
+2. Press the "Return" button.
 POSTCONDITIONS: 
 1. The second item in the cat listing is "ID 2. Old Deuteronomy".
 2. The text "Success!" appears beside the "Return" button.
@@ -125,5 +125,5 @@ EXECUTION STEPS:
 POSTCONDITIONS: 
 1. The first item in the cat listing is "ID 1. Jennyanydots".
 2. The second item in the cat listing is "ID 2. Old Deuteronomy".
-2. The third item in the cat listing is "ID 3. Mistoffelees".
+3. The third item in the cat listing is "ID 3. Mistoffelees".
 ```
