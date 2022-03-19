@@ -33,7 +33,6 @@ public class ValidHTMLStringGenerator extends Generator<String> {
 	 */
 	@Override
 	public String generate(SourceOfRandomness random, GenerationStatus status) {
-		// TODO: Fill in.
 		int length = status.size() + 10;
 		String ret = "";
 		Stack<String> stack = new Stack<String>();
