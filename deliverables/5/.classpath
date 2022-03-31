@@ -35,6 +35,6 @@
 	<classpathentry kind="lib" path="spotbugs-4.0.0-beta4/lib/spotbugs.jar"/>
 	<classpathentry kind="lib" path="BeanCounterBuggy.jar"/>
 	<classpathentry kind="lib" path="BeanCounterSolution.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_231"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
