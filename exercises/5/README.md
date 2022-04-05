@@ -10,6 +10,7 @@
     + [Applying JPF on Rand](#applying-jpf-on-rand)
     + [Applying JPF on DrunkCarnivalShooter](#applying-jpf-on-drunkcarnivalshooter)
     + [Applying JPF on JUnit to Unit Test DrunkCarnivalShooter](#applying-jpf-on-junit-to-unit-test-drunkcarnivalshooter)
+    + [Applying JPF on a JUnit test to obtain the trace](#applying-jpf-on-a-junit-test-to-obtain-the-trace)
     + [Lessons on Model Checking](#lessons-on-model-checking)
   * [Submission](#submission-1)
   * [GradeScope Feedback](#gradescope-feedback)
@@ -695,8 +696,85 @@ led to the failure, which helps you debug the problem.  Feel free to append
 additional information to the failString that may help you debug.
 
 If you implemented the test properly, you should see a long list of errors for
-different combinations.  Debug DrunkCarnivalShooterImpl to remove the errors.
-Now if you play the game, you should not see any defects.
+different combinations:
+
+```
+wahn:CS1632_DrunkCarnivalShooter_Solution wahn$ bash runJPF.sh JUnit.macos.jpf 
+JavaPathfinder core system v8.0 (rev 471fa3b7c6a9df330160844e6c2e4ebb4bf06b6c) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+TestRunner.main()
+
+====================================================== search started: 3/31/22 3:35 PM
+testShoot(DrunkCarnivalShooterTest): Failure in Round #0:        ||               (targetChoice=0): expected:<0> but was:<-1>
+testShoot(DrunkCarnivalShooterTest): Failure in Round #0:        ||          ||   (targetChoice=0): expected:<1> but was:<0>
+testShoot(DrunkCarnivalShooterTest): Failure in Round #0:        ||    ||         (targetChoice=0): expected:<1> but was:<0>
+testShoot(DrunkCarnivalShooterTest): Failure in Round #0:        ||    ||    ||   (targetChoice=0): expected:<2> but was:<1>
+testShoot(DrunkCarnivalShooterTest): Failure in Round #0:  ||                     (targetChoice=0): expected:<0> but was:<-1>
+...
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:01
+states:             new=156,visited=161,backtracked=317,end=192
+search:             maxDepth=7,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=125
+heap:               new=20683,released=37388,maxLive=1649,gcCycles=317
+instructions:       473440
+max memory:         155MB
+loaded code:        classes=284,methods=4039
+
+====================================================== search finished: 3/31/22 3:35 PM
+
+```
+
+### Applying JPF on a JUnit test to obtain the trace
+
+You need the below files for this section, which you will have to **copy over**
+to your GitHub Classroom repository because they are not there yet:
+
+* [JUnitTestShoot.macos.jpf](JUnitTestShoot.macos.jpf)
+* [JUnitTestShoot.win.jpf](JUnitTestShoot.win.jpf)
+* [src/TestShoot.java](src/TestShoot.java)
+
+Now you will notice that the list of errors are being emitted by the JUnit
+TestRunner class and JPF itself does not detect any errors.  That is because
+the JUnit framework catches all exceptions emanating from test cases and
+handles them by adding a Failure to the list of Failures to return to the
+TestRunner.  This is so that the JUnit framework does not throw an exception
+and crash on the first test failure it encounters --- and continues
+execution to find other failures.  If JPF does not detect any exceptions,
+then it cannot signal any errors.
+
+Now this behavior is sometimes unhelpful becauase then JPF will not print
+the trace of instructions up to that failure, which is crucial in
+understanding how you got there.  So what can you do?  Well, now that you
+know which test case is failing, you can try directly calling that test case
+in the TestRunner without going through JUnit.  The class TestShoot does
+exactly that: it creates the JUnit test object, calls setUp(), and then
+calls the test method, just like JUnit would, but without catching the
+exceptions.  That way you will be able to get a trace leading up to the
+failure.
+
+In order to invoke TestShoot, do the following on Windows machines:
+
+```
+bash runJPF.bat JUnitTestShoot.win.jpf
+```
+
+Or the following on Mac/Linux machines:
+
+
+```
+bash runJPF.sh JUnitTestShoot.macos.jpf
+```
+
+
+Debug DrunkCarnivalShooterImpl to remove the errors.  Now if you play the
+game, you should not see any defects.
 
 ### Lessons on Model Checking
 
