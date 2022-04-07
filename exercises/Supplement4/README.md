@@ -1,6 +1,8 @@
 # CS 1632 - Software Quality Assurance
 Spring Semester 2022 - Supplementary Exercise 4
 
+* DUE: Apr 15 (Friday), 2022 11:59 PM 
+
 ## Description
 
 During the semester, we learned various ways in which we can automate testing.
@@ -118,4 +120,14 @@ README.md instructions.  Again, we will go over this in class so you just need t
 
 # Submission
 
-TBD.  I am going to ask you to submit screenshots of your pipelines.
+Please replace the example screenshots in
+[ReportTemplate.docx](ReportTemplate.docx) with your own screenshots.  These
+is a [PDF version](ReportTemplate.pdf) as well.  Please read the
+instructions on the template carefully.  For those of you who are unable to
+run pipelines on GitLab because you cannot / do not want to provide credit
+card information, some parts of the report are optional.
+
+Wnen you are done, submit to the "Supplementary Exercise 4 Report" link on
+GradeScope.  You can divvy up the screenshot taking with your partner, but I
+want each of you to try going through the exercise in your own GitLab
+accounts.
